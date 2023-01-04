@@ -277,7 +277,7 @@ footer {
     color: white;
 }
     
-        @media (max-width: 967px) {
+    @media (max-width: 967px) {
             .active-page {
                 border: 0;
             }
@@ -357,7 +357,7 @@ footer {
                 margin: 0 auto;
             }
             .navbar {
-                background-image: url(/DONNA/kavalapic.jpg);
+                background-image: url(./DONNA/kavalapic.jpg);
                 isolation: isolate;
                 margin: 0;
                 padding:0;    
@@ -533,5 +533,7 @@ footer {
                 transform: translateY(0);
             }
         }
+
+
 
 
