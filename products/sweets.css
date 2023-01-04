@@ -326,12 +326,111 @@ footer {
 }
     
         @media (max-width: 967px) {
-
+            .active-page {
+                border: 0;
+            }
+            .section-wrapper {
+                padding: 6em;
+            }
+            .product1 {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .container-grid {
+                padding-top: 10em;
+            }
+            .sidemenu {
+                width: 100%;
+                padding-bottom: 40px;
+            }
+            .sidemenu ul {
+                width: 50%;
+            }
             .toggle-button {
                 display: flex;
                 z-index: 12;
                 top: 53px;
             }
+            .toggle-button {
+         display: flex;
+         position: absolute;
+         z-index: 12;
+         top: 7%;
+         color: #fff;
+     }
+     .toggle-button .bar {
+        background-color: #fff;    
+    }
+     .container {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 120px;
+         max-width: 100%;
+         width: 100%;
+         margin: 0 auto;
+         position: absolute;
+         top: 2em;
+     }
+     .navbar {
+         margin: 0;
+         padding:0;    
+         position:absolute;
+         top: 0;   
+     }
+
+     .cart {
+         margin: 0 25px;
+     }
+     #logo {
+         position: absolute;
+     }
+     #logo img {
+         width: 115px;
+         justify-self: flex-start;
+     }
+     .nav-links {
+         display: flex;
+         flex-direction: column;
+         align-items: flex-end;
+         position: fixed;
+         top: 0;
+         left: -300px;
+         height: 100vh;
+         width: 300px;
+         z-index: 1;
+         background-color: #e4e4e4;
+         box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+         padding: 80px 20px 0 0;
+         transition:  250ms ease-in-out;
+     }
+     .nav-links.active {
+         left: 0;
+     }
+     .nav-links li {
+         margin: 0;
+         font-size: 1.5em;
+         width: 100%;
+         display: flex;
+         align-items: center;
+         
+     }
+     .nav-links li a {
+         color: #333;
+         margin: 0 auto;
+         align-items: center;
+
+     }   
+     
+     .nav-links ul {
+         flex-direction: column;
+         justify-content: space-around;
+         align-items: center;
+         height: 100vh;
+         width: 100%;
+         margin: 0 auto;
+     }
             .toggle-button .bar {
                 background-color: #333;
             }
@@ -355,64 +454,6 @@ footer {
             #logo img {
                 width: 145px;
                 justify-self: flex-start;
-            }
-            .navbar {
-                margin: 0;
-                padding:0;    
-                position:relative;   
-                      
-            }
-            .nav-links {
-                font-size: 1.5em;
-                margin: 0 auto;
-                top: -40px;
-                width: 100%;
-                z-index: 10;
-                position: absolute;
-            
-                transform: translateX(-100%);
-            } 
-            .nav-links ul {
-                width: 100%;
-                flex-direction: column;
-                justify-content: space-around;
-                height: 100vh;
-                
-               
-                background: linear-gradient(to bottom, #e4e4e4, #ffffff);
-            }
-            .nav-links li {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex: 1 1 0;
-                padding: 0;
-                margin: 0;
-            }
-            .nav-links li a {
-                color: #333;
-            }
-            .nav-links.active {                
-                display: flex;
-                text-align: center;
-                background-color: #333;
-                transform: translateX(0);
-                transition: transform ease-in-out 250ms;
-            }
-            .product1 {
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-            .container-grid {
-                padding-top: 10em;
-            }
-            .sidemenu {
-                width: 100%;
-                padding-bottom: 40px;
-            }
-            .sidemenu ul {
-                width: 50%;
             }
                 }
         @media (max-width: 600px) {

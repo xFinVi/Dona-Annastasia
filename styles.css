@@ -16,20 +16,22 @@ body {
 }
 /* NAVBAR - CONTAINER */
 .mainImg {
-    background-image: url("./DONNA/productJar.avif");
+    background-image: url("/DONNA/productJar.avif");
     background-repeat: no-repeat;
     background-position: 0 -100px;
     background-size: cover;
     width: 100%;
-    height: 40vh;
-    padding: 20em;
+    height: 60vh;
     background-attachment: fixed;
     opacity: .9;
     position: relative;
 }
 .headings {
+    font-family: 'Times New Roman', Times, serif;
     position: absolute;
     top: 50%;
+    left: 0;
+    right: 0;
     text-align: center;
     color: #fff;
     font-size: 2.5em;
@@ -51,6 +53,9 @@ body {
     font-family: 'Open Sans', sans-serif;
     position: absolute;
     top: 0;
+    left: 0;
+    right: 0;
+
     height: 150px;
    }
 
@@ -216,25 +221,25 @@ body {
     padding: 15px 0;
 }
 .imgb {
-    background-image: url("./DONNA/productsshelf.avif");
-    padding: 250px;
+    background-image: url("/DONNA/productsshelf.avif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 50vh;
 }
 .imgb1 {
-    background-image: url("./DONNA/low-carb-sugar-free-strawberry-jelly-9-600x400.jpg");
+    background-image: url("/DONNA/low-carb-sugar-free-strawberry-jelly-9-600x400.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 250px;
+    height: 50vh;
 }
 .imgb2 {
-    background-image: url("./DONNA/apricot\ breakfast.avif");
+    background-image: url("/DONNA/apricot\ breakfast.avif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 250px;
+    height: 50vh;
 }
 .sub-content1 {
     color: #333;
@@ -321,7 +326,7 @@ footer {
     width: 33%;
 }
 .copytext {
-/*     background-image: url("./DONNA/dona\ anastasia.jpg");
+/*     background-image: url("/DONNA/dona\ anastasia.jpg");
     background-position: 0 -350px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -363,7 +368,20 @@ footer {
     
  
 @media (max-width: 967px) {
-
+    .headings {
+        position: absolute;
+        top: 50%;
+        text-align: center;
+        color: #fff;
+        font-size: 1.5em;
+        font-weight: 400;
+    }
+    .active-page {
+        border: 0;
+    }
+    .cart {
+        color: #fff;
+    }
     #menu-sub ul{
        display: none;
     }
@@ -372,7 +390,11 @@ footer {
          position: absolute;
          z-index: 12;
          top: 7%;
+         color: #fff;
      }
+     .toggle-button .bar {
+        background-color: #fff;    
+    }
      .container {
          display: flex;
          justify-content: center;
@@ -387,7 +409,7 @@ footer {
      .navbar {
          margin: 0;
          padding:0;    
-         position:relative;   
+         position:absolute;   
      }
 
      .cart {
@@ -444,9 +466,18 @@ footer {
      
          }
  @media (max-width: 600px) {
+    .whatwedo-box {
+        margin: 0;
+    }
+    .imgb {
+        margin: 0;
+        width: 100%;
+    }
      .navbar {
+        width: 100%;
          padding: 0;
-         margin: 0;
+         margin: 0 auto;
+         
      }
      .toggle-button {
          top: 7%;
@@ -458,9 +489,7 @@ footer {
      #logo a{
          padding: 0;
      }
-     .cart {
-         padding-right: 20px;
-     }
+     
      .item:nth-of-type(3){
          flex: 0 1 1;
      }
@@ -512,7 +541,7 @@ footer {
              text-align: center;
          }
          .foot {
-             margin: 1.5em;
+             width: 130px;
          }
 
 }

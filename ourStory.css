@@ -194,7 +194,7 @@ body {
 }
 
 .pimg1 {
-    background-image: url(./DONNA/apricot\ breakfast.avif);
+    background-image: url(/DONNA/apricot\ breakfast.avif);
     min-height: 70vh;
     isolation: isolate;
     width: 100%;
@@ -210,15 +210,15 @@ body {
 
 
 .pimg2 {
-    background-image: url(./DONNA/sour\ cherry\ marmelade\ making.avif);
+    background-image: url(/DONNA/sour\ cherry\ marmelade\ making.avif);
     min-height: 400px;
 }
 .pimg3 {
-    background-image: url(./DONNA/strawberry\ jam\ on\ toast.avif);
+    background-image: url(/DONNA/strawberry\ jam\ on\ toast.avif);
     min-height: 400px;
 }
 .pimg4 {
-    background-image: url(./DONNA/orange\ marmelade.avif);
+    background-image: url(/DONNA/orange\ marmelade.avif);
     min-height: 100%;
 }
 
@@ -365,7 +365,9 @@ footer {
     
 
         @media (max-width: 967px) {
-        
+            .active-page {
+                border: 0;
+            }
            
             .navbar {
                 justify-content: flex-end;  

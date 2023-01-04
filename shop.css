@@ -344,7 +344,9 @@ footer {
     
  
 @media (max-width: 967px) {
-
+    .active-page {
+        border: 0;
+    }
     #menu-sub ul{
        display: none;
     }
