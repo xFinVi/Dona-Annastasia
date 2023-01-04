@@ -23,7 +23,7 @@ body {
     margin: 0;
     font-family: 'Lato', sans-serif;
     font-family: 'Open Sans', sans-serif;
-    background-image: url(/DONNA/kavalapic.jpg);
+    background-image: url(./DONNA/kavalapic.jpg);
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
@@ -354,7 +354,7 @@ footer {
                 margin: 0 auto;
             }
             .navbar {
-                background-image: url(/DONNA/kavalapic.jpg);
+                background-image: url(./DONNA/kavalapic.jpg);
                 isolation: isolate;
                 margin: 0;
                 padding:0;    
@@ -402,7 +402,7 @@ footer {
             }
           
             .navbar {
-                background-image: url(/DONNA/kavalapic.jpg);
+                background-image: url(./DONNA/kavalapic.jpg);
                 isolation: isolate;
                 height: 130vh;
                 top: -20px;
