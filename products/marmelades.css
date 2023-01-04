@@ -327,8 +327,10 @@ footer {
     color: white;
 }
     
-        @media (max-width: 967px) {
-             .active-page {
+  @media (max-width: 967px) {
+    
+    /* AAAAAAAAAAAAAAAAAAAAAAAA */
+    .active-page {
         border: 0;
     }
     #menu-sub ul{
@@ -425,6 +427,8 @@ footer {
     }
          }
  @media (max-width: 600px) {
+
+    /* aaaaaaaaaaaaa */
      .navbar {
          padding: 0;
          margin: 0;
@@ -512,15 +516,13 @@ footer {
  .cart {
      margin: 0;
  }
-        }
+}               
 
-        @keyframes nav-log {
-            0% {
-               transform: translateY(-100%); 
-            }
-            100% {
-                transform: translateY(0);
-            }
-        }
-
-
+ @keyframes nav-log {
+     0% {
+        transform: translateY(-100%); 
+     }
+     100% {
+         transform: translateY(0);
+     }
+ }
