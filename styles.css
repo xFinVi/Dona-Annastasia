@@ -466,6 +466,11 @@ footer {
      
          }
  @media (max-width: 600px) {
+      .mainImg {
+        background-repeat: no-repeat;
+        background-position:  -300px 0;
+        background-size: 100vh;
+    }
     .whatwedo-box {
         margin: 0;
     }
