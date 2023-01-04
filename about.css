@@ -23,7 +23,7 @@ body {
     margin: 0;
     font-family: 'Lato', sans-serif;
     font-family: 'Open Sans', sans-serif;
-    background-image: url(../DONNA/kavalapic.jpg);
+    background-image: url("./DONNA/kavalapic.jpg");
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
