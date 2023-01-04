@@ -16,7 +16,7 @@ body {
 }
 /* NAVBAR - CONTAINER */
 .mainImg {
-    background-image: url("/DONNA/productJar.avif");
+    background-image: url("./DONNA/productJar.avif");
     background-repeat: no-repeat;
     background-position: 0 -100px;
     background-size: cover;
@@ -216,21 +216,21 @@ body {
     padding: 15px 0;
 }
 .imgb {
-    background-image: url("/DONNA/productsshelf.avif");
+    background-image: url("./DONNA/productsshelf.avif");
     padding: 250px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .imgb1 {
-    background-image: url("/DONNA/low-carb-sugar-free-strawberry-jelly-9-600x400.jpg");
+    background-image: url("./DONNA/low-carb-sugar-free-strawberry-jelly-9-600x400.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 250px;
 }
 .imgb2 {
-    background-image: url("/DONNA/apricot\ breakfast.avif");
+    background-image: url("./DONNA/apricot\ breakfast.avif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -321,7 +321,7 @@ footer {
     width: 33%;
 }
 .copytext {
-/*     background-image: url("/DONNA/dona\ anastasia.jpg");
+/*     background-image: url("./DONNA/dona\ anastasia.jpg");
     background-position: 0 -350px;
     background-repeat: no-repeat;
     background-size: cover;
