@@ -23,8 +23,10 @@ body {
     margin: 0;
     font-family: 'Lato', sans-serif;
     font-family: 'Open Sans', sans-serif;
-    background-image: url("./DONNA/kavalapic.jpg");
-    position: relative;
+    background-image: url(./DONNA/kavalapic.jpg);
+    position: absolute;
+    left: 0;
+    top: 0;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 -300px;
@@ -32,6 +34,7 @@ body {
     height: 70vh;
     isolation: isolate;
    }
+
    .navbar::after {
     content: '';
     position: absolute;
@@ -119,6 +122,9 @@ nav.stroke ul li a:hover:after {
 .item:nth-of-type(3) {
     flex: 1 1 250px;   
 }
+.item:nth-of-type(4) {
+    flex: 1 1 0;   
+}
 #cart {
     color: #fff;
     margin-right: 1em;
@@ -189,26 +195,7 @@ nav.stroke ul li a:hover:after {
     width: 100%;
 }
 
-/* HAMBURGER MENU */
 
-.toggle-button {
-    position: absolute;
-    top: 5rem;
-    left: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-}
-
-
-.toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: #fff;
-    border-radius: 10px;
-}
 
 footer {
     background: linear-gradient(to bottom, #e4e4e4, #ffffff);
@@ -277,16 +264,9 @@ footer {
     color: white;
 }
     
-    @media (max-width: 967px) {
+        @media (max-width: 967px) {
             .active-page {
                 border: 0;
-            }
-            .toggle-button {
-                display: flex;
-                position: absolute;
-                z-index: 12;
-                top: 50px;
-                margin-left: 1.5em;
             }
             .container {
                 display: flex;
@@ -357,7 +337,7 @@ footer {
                 margin: 0 auto;
             }
             .navbar {
-                background-image: url(./DONNA/kavalapic.jpg);
+                background-image: url(/DONNA/kavalapic.jpg);
                 isolation: isolate;
                 margin: 0;
                 padding:0;    
@@ -373,9 +353,6 @@ footer {
                 z-index: -1;
                 opacity: .7;
             }
-
-
-       /* @media (min-width: 858px, min-height: 700px){ */
             .ptext {
                 position: inherit;
                 top: 25%;
@@ -392,6 +369,34 @@ footer {
                 padding: 0;
                 margin: 0;
             } 
+            .hamburger {
+                display: inline-block;
+                cursor: pointer;
+                position: absolute;
+                z-index: 999;
+                top: 43px;
+                left: 25px;
+              }
+              
+              .bar1, .bar2, .bar3 {
+                width: 35px;
+                height: 5px;
+                background-color: #fff;
+                margin: 6px 0;
+                transition: 0.4s;
+              }
+              
+              .change .bar1 {
+                transform: translate(0, 11px) rotate(-45deg);
+                background-color: #333;
+              }
+              
+              .change .bar2 {opacity: 0;}
+              
+              .change .bar3 {
+                transform: translate(0, -11px) rotate(45deg);
+                background-color: #333;
+              }
             
           
             
@@ -533,7 +538,5 @@ footer {
                 transform: translateY(0);
             }
         }
-
-
 
 
