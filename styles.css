@@ -13,6 +13,7 @@ body {
     line-height: 1.8em;
     color: 333;
     overflow-x: hidden;
+    background-color: #dfd9d9;
 }
 /* NAVBAR - CONTAINER */
 .mainImg {
@@ -267,6 +268,7 @@ body {
 /* FOOTER */
 
 footer {
+    background: linear-gradient(to bottom, #dfd9d9, #3f6068);
     margin: 20px 0;
     padding: 70px;
     color: #333;
