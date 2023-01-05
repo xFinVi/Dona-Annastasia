@@ -112,8 +112,8 @@ nav.stroke ul li a:hover:after {
   width: 100%;
 }
 .active-page {
-    border: 3px solid #fff;
-    border-radius: 10px;
+    border-bottom: 3px solid #fff;
+
 }
 
 .item:nth-of-type(1) {
