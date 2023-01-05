@@ -82,7 +82,7 @@ body {
 
 .nav-links li a {
     text-decoration: none;
-    color: #333;  
+    color: #fff;  
 }
 #menu-sub {
     position: absolute;
@@ -129,7 +129,7 @@ body {
     transition: 250ms;
 }
 .active-page {
-    border-bottom: 3px solid #333;
+    border-bottom: 3px solid #fff;
 }
 
 /* NAV UNDERLINE ANIMATION */
