@@ -369,6 +369,9 @@ footer {
     
 
         @media (max-width: 967px) {
+             .pimg1, .pimg2, .pimg3, .pimg4 {
+                background-attachment: initial;
+            }
             .active-page {
                 border: 0;
             }          
