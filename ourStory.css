@@ -48,6 +48,9 @@ body {
 .item:nth-of-type(3) {
     flex: 1 1 0;   
 }
+.item:nth-of-type(4) {
+    flex: 1 1 0;   
+}
 
 
 
@@ -367,28 +370,18 @@ footer {
         @media (max-width: 967px) {
             .active-page {
                 border: 0;
-            }
-           
+            }          
             .navbar {
                 justify-content: flex-end;  
                 align-items: center;
                 margin: 0;              
             }
-           /*  .cart {
-                width: 50%;
-            } */
             #logo {
                 display: flex;
                 justify-content: flex-end;
                 width: 65%;
                 margin: 0;
                 padding: 0;
-            }
-            .toggle-button {
-                display: flex;
-                position: absolute;
-                z-index: 12;
-                top: 14.5%;
             }
             .nav-links {
                 display: flex;
@@ -454,6 +447,34 @@ footer {
            .icons {
             padding: 20px 0;
            }
+           .hamburger {
+            display: inline-block;
+            cursor: pointer;
+            position: absolute;
+            z-index: 999;
+            top: 54px;
+            left: 25px;
+          }
+          
+          .bar1, .bar2, .bar3 {
+            width: 35px;
+            height: 5px;
+            background-color: #fff;
+            margin: 6px 0;
+            transition: 0.4s;
+          }
+          
+          .change .bar1 {
+            transform: translate(0, 11px) rotate(-45deg);
+            background-color: #333;
+          }
+          
+          .change .bar2 {opacity: 0;}
+          
+          .change .bar3 {
+            transform: translate(0, -11px) rotate(45deg);
+            background-color: #333;
+          }
         }
         @media (max-width: 600px) {
             .navbar {
