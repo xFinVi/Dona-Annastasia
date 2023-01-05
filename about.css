@@ -8,7 +8,8 @@
 body {
     height: 100vh;
    
-  background-color: #dfd9d9;
+    background: linear-gradient(to bottom, #e4e4e4, #ffffff);
+    background-color: #fff;
     font-family: "lato", sans-serif;
     font-weight: 400;
     line-height: 1.8em;
@@ -17,12 +18,12 @@ body {
 }
 /* NAVBAR - CONTAINER */
 .navbar {
-    /* width: 100%; */
+
     padding: 0 2em;
     margin: 0;
     font-family: 'Lato', sans-serif;
     font-family: 'Open Sans', sans-serif;
-    background-image: url("./DONNA/kavalapic.jpg");
+    background-image: url(./DONNA/kavalapic.jpg);
     position: absolute;
     left: 0;
     top: 0;
@@ -30,8 +31,9 @@ body {
     background-repeat: no-repeat;
     background-position: 0 -300px;
     background-attachment: fixed;
-    height: 60vh;
+    height: 70vh;
     isolation: isolate;
+    width: 100%;
    }
 
    .navbar::after {
@@ -46,16 +48,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 100%;
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
   /* animation: nav-load 300ms ease-in; */
 }
 
 /* LOGO  */
 #logo {
+    width: 33%;
     padding: .5em 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 #logo img {
     max-width: 150px;
@@ -66,6 +73,7 @@ body {
     margin-right: auto;
     box-sizing: border-box;
     position: relative;
+    width: 33%;
 }
 .nav-links ul {
     display: flex;
@@ -114,15 +122,9 @@ nav.stroke ul li a:hover:after {
 .item:nth-of-type(1) {
     flex: 1 1 250px;
 }
-.item:nth-of-type(2) {
-    flex: 1 1 250px;
-    
-}
-.item:nth-of-type(3) {
-    flex: 1 1 250px;   
-}
-.item:nth-of-type(4) {
-    flex: 1 1 0;   
+
+.cart {
+    width: 33%;
 }
 #cart {
     color: #fff;
@@ -144,7 +146,7 @@ nav.stroke ul li a:hover:after {
     width: 70%;
     left: 15%;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: cursive;
 }
 
 .ptext h1 {
@@ -197,7 +199,7 @@ nav.stroke ul li a:hover:after {
 
 
 footer {
-   background: linear-gradient(to bottom, #dfd9d9, #3f6068);
+    background: linear-gradient(to bottom, #e4e4e4, #ffffff);
     color: #333;
     width: 100vw;
 }
@@ -264,35 +266,16 @@ footer {
 }
     
         @media (max-width: 967px) {
+
             .active-page {
                 border: 0;
             }
-            .container {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 120px;
-                max-width: 100%;
-                width: 100%;
-                margin: 0 auto;
-                position: absolute;
-                top: 2em;
-            }
-            .navbar {
-                margin: 0;
-                padding:0;    
-                position:relative;   
-            }
-    
-            .cart {
-                margin: 0 25px;
-            }
             #logo {
-                position: absolute;
+                width: 45%;
+                justify-content: flex-end;
             }
             #logo img {
-                width: 115px;
-                justify-self: flex-start;
+                width: 115px;   
             }
             .nav-links {
                 display: flex;
@@ -324,7 +307,6 @@ footer {
                 color: #333;
                 margin: 0 auto;
                 align-items: center;
-
             }   
             
             .nav-links ul {
@@ -334,23 +316,6 @@ footer {
                 height: 100vh;
                 width: 100%;
                 margin: 0 auto;
-            }
-            .navbar {
-                background-image: url(/DONNA/kavalapic.jpg);
-                isolation: isolate;
-                margin: 0;
-                padding:0;    
-                position:relative;   
-                height: 100vh; 
-                top: -29px;  
-            }
-            .navbar::after {
-                content: '';
-                position: absolute;
-                inset: 0;
-                background-color: rgba(221, 210, 181, 0.253);
-                z-index: -1;
-                opacity: .7;
             }
             .ptext {
                 position: inherit;
@@ -401,81 +366,17 @@ footer {
             
                 }
         @media (max-width: 600px) {
-        
-            .toggle-button {
-                display: flex;
-                z-index: 12;
-                top: 49px;
-            }
           
-            .navbar {
-                isolation: isolate;
-                top: -20px;
-                margin: 0;
-                padding:0;     
-                
-            }
-            .navbar::after {
-                content: '';
-                position: absolute;
-                inset: 0;
-                background-color: rgba(221, 210, 181, 0.253);
-                z-index: -1;
-                opacity: .7;
-            }
             .container {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                max-width: 100%;
-                width: 100%;
-                margin: 0 auto;
-                position: absolute;
-            }
-            .nav-links {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-end;
-                position: fixed;
-                top: 0;
-                left: -300px;
-                height: 100vh;
-                width: 300px;
-                z-index: 1;
-                background-color: #e4e4e4;
-                box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
-                padding: 80px 20px 0 0;
-                transition:  250ms ease-in-out;
-            }
-            .nav-links.active {
-                left: 0;
-            }
-            .nav-links li {
-                margin: 0;
-                font-size: 1.5em;
-                width: 100%;
-                display: flex;
-                align-items: center;
-                
-            }
-            .nav-links li a {
-                color: #333;
-                margin: 0 auto;
-                align-items: center;
-
-            }   
-            
-            .nav-links ul {
-                flex-direction: column;
-                justify-content: space-around;
-                align-items: center;
-                height: 100vh;
-                width: 100%;
-                margin: 0 auto;
-            }
+                margin: 1em auto;
+            }     
             .ptext {
-                 top: 17%;
-                       
+                top: 20%;
+                font-weight: 500;                       
+            }
+            #logo {
+                width: 50%;
+                margin-right: 2em;
             }
            .ptext-sub {
                 display: flex;
@@ -488,12 +389,12 @@ footer {
             .ptext p {
                 margin: 0;
                 padding: 0;
-                font-size: .9em;
+                font-size: 1.2em;
             }
             .ptext h2 {
                 margin: 15px 0;
                 padding: 0;
-                font-size: 1.2em;
+                font-size: 1em;
                 border-bottom: 1px solid #fff;
             }
                 .wrapper {
@@ -519,6 +420,11 @@ footer {
                 }
            
                 }
+        @media (max-width: 400px) {
+                #logo {
+                    margin-right: 0;
+                }
+        }       
         @media (max-width: 365px) {
                 .item:nth-of-type(3){
                     position: absolute;
