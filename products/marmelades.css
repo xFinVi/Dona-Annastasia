@@ -10,7 +10,7 @@
 body {
     width: 100%;
     height: 100vh;
-    background-color: #dfd9d9;
+    background: linear-gradient(to bottom, #dfd9d9, #ffffff);
     font-family: "lato", sans-serif;
     font-weight: 400;
     line-height: 1.8em;
@@ -40,6 +40,9 @@ body {
     
 }
 .item:nth-of-type(3) {
+    flex: 1 1 0;   
+}
+.item:nth-of-type(4) {
     flex: 1 1 0;   
 }
 
@@ -172,7 +175,6 @@ body {
     display: flex;
 }
 .sidemenu {
-    
     padding: 0 40px;
     font-size: 1.25em;
     width: 20%;
@@ -188,7 +190,6 @@ body {
     justify-content: flex-start;
     padding: 20px 10px;
     border-radius: 15px;
-    width: 100%;
 }
 .sidemenu li:hover {
     background-color: #08817998;
@@ -202,7 +203,9 @@ body {
 }
 
 .product1 .pro {
+    background: linear-gradient(to bottom, #dfd9d9, #ffffff);
     padding: 10px 12px;
+    border: 1px solid #333;
     border-radius: 20px;
     cursor: pointer;
 }
@@ -233,13 +236,11 @@ body {
     color: #088178;
 }
 .product1 .pro-container {
-    
     width: 80%;
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
 }
-
 /* HAMBURGER MENU */
 
 .toggle-button {
@@ -327,7 +328,7 @@ footer {
     color: white;
 }
     
-  @media (max-width: 967px) {
+@media (max-width: 967px) {
     
     /* AAAAAAAAAAAAAAAAAAAAAAAA */
     .active-page {
@@ -425,6 +426,34 @@ footer {
     .sidemenu ul {
         width: 100%;
     }
+    .hamburger {
+        display: inline-block;
+        cursor: pointer;
+        position: absolute;
+        z-index: 999;
+        top: 58px;
+        left: 25px;
+      }
+      
+      .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+      
+      .change .bar1 {
+        transform: translate(0, 11px) rotate(-45deg);
+        background-color: #333;
+      }
+      
+      .change .bar2 {opacity: 0;}
+      
+      .change .bar3 {
+        transform: translate(0, -11px) rotate(45deg);
+        background-color: #333;
+      }
          }
  @media (max-width: 600px) {
 
