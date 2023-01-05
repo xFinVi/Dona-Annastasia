@@ -27,7 +27,7 @@ body {
     position: relative;
 }
 .headings {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: cursive ;
     position: absolute;
     top: 50%;
     left: 0;
@@ -44,7 +44,7 @@ body {
 
 .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     width: 100%;
     padding:  0 2em;
@@ -54,7 +54,6 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
 
     height: 150px;
    }
@@ -71,6 +70,9 @@ body {
     
 }
 .item:nth-of-type(3) {
+    flex: 1 1 0;   
+}
+.item:nth-of-type(4) {
     flex: 1 1 0;   
 }
 
@@ -181,27 +183,11 @@ body {
 
 /* HAMBURGER MENU FOR SMALL SCREENS*/
 
-.toggle-button {
-    position: absolute;
-    left: 3rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-}
-
-.toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: #333;
-    border-radius: 10px;
-}
 .whatwedo-box {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    font-family: cursive;
     margin: 40px 60px;
 }
 .maincontent {
@@ -326,11 +312,6 @@ footer {
     width: 33%;
 }
 .copytext {
-/*     background-image: url("./DONNA/dona\ anastasia.jpg");
-    background-position: 0 -350px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    isolation: isolate; */
     position: relative;
     text-align: center;
     padding: 100px 0 80px 0;
@@ -338,15 +319,7 @@ footer {
     font-size: 1.5em;
     font-weight: bold;
 }
-/* .copytext::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    bottom: 0;
-    background-color: rgba(255, 254, 254, 0.685);
-    z-index: -1;
-    opacity: .6;
-} */
+
 .fa {
     padding: 5px;
     width: 31px;
@@ -384,16 +357,6 @@ footer {
     }
     #menu-sub ul{
        display: none;
-    }
-     .toggle-button {
-         display: flex;
-         position: absolute;
-         z-index: 12;
-         top: 7%;
-         color: #fff;
-     }
-     .toggle-button .bar {
-        background-color: #fff;    
     }
      .container {
          display: flex;
@@ -452,7 +415,6 @@ footer {
          color: #333;
          margin: 0 auto;
          align-items: center;
-
      }   
      
      .nav-links ul {
@@ -463,10 +425,39 @@ footer {
          width: 100%;
          margin: 0 auto;
      }
+     .hamburger {
+        display: inline-block;
+        cursor: pointer;
+        position: absolute;
+        z-index: 999;
+        top: 54px;
+        left: 25px;
+      }
+      
+      .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #fff;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+      
+      .change .bar1 {
+        transform: translate(0, 11px) rotate(-45deg);
+        background-color: #333;
+      }
+      
+      .change .bar2 {opacity: 0;}
+      
+      .change .bar3 {
+        transform: translate(0, -11px) rotate(45deg);
+        background-color: #333;
+      }
+      
      
          }
  @media (max-width: 600px) {
-      .mainImg {
+    .mainImg {
         background-repeat: no-repeat;
         background-position:  -300px 0;
         background-size: 100vh;
@@ -482,6 +473,7 @@ footer {
         width: 100%;
          padding: 0;
          margin: 0 auto;
+    
          
      }
      .toggle-button {
@@ -563,3 +555,6 @@ footer {
          transform: translateY(0);
      }
     }
+
+
+ 
