@@ -18,15 +18,11 @@ body {
 }
 /* NAVBAR - CONTAINER */
 .navbar {
-
     padding: 0 2em;
     margin: 0;
     font-family: 'Lato', sans-serif;
     font-family: 'Open Sans', sans-serif;
     background-image: url(./DONNA/kavalapic.jpg);
-    position: absolute;
-    left: 0;
-    top: 0;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 -300px;
@@ -74,6 +70,7 @@ body {
     box-sizing: border-box;
     position: relative;
     width: 33%;
+    padding-left: 1.5em;
 }
 .nav-links ul {
     display: flex;
@@ -202,6 +199,7 @@ footer {
     background: linear-gradient(to bottom, #e4e4e4, #ffffff);
     color: #333;
     width: 100vw;
+    
 }
 .wrapper {
     display: flex;
@@ -300,8 +298,7 @@ footer {
                 font-size: 1.5em;
                 width: 100%;
                 display: flex;
-                align-items: center;
-                
+                align-items: center;                
             }
             .nav-links li a {
                 color: #333;
@@ -318,8 +315,7 @@ footer {
                 margin: 0 auto;
             }
             .ptext {
-                position: inherit;
-                top: 25%;
+                top: 20%;
                 margin-top: 0;
                 padding: 0;
                 font-size: 1.15em;
